@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.section-1 {
+    padding: 40px 80px;
+}
+
+
+.logo {
+    width: 50px;
+    margin: 3px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    padding: 20px 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}#mobile{
+    display: none;
+}#close{
+    display: none;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    transition: .5s ease;
+
+
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(195, 11, 11);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: brown;
+    position: absolute;
+    bottom: -4px;
+    left: 20px
+}
+
+#hero {
+    background-image: url("hero4.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: right 0;
+    background-position: top 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+
+
+}
+
+.button-shop {
+    padding: 0 90px;
+
+
+}
+
+.features {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+
+}
+
+.features-row {
+    text-align: center;
+    width: 180px;
+
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px pink;
+    margin: 15px 0;
+}
+
+.features-row:hover {
+    border-radius: 0px;
+    box-shadow: none;
+
+}
+
+.features-pictures {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+.feature-caption {
+    background-color: pink;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.feature-caption:hover {
+    border-radius: 0px;
+    color: white;
+    background: rgb(204, 9, 9);
+    transition: .6s;
+
+
+}
+
+.product1 {
+    text-align: center;
+    background-color: pink;
+    padding: 20px 90px;
+
+
+}
+
+.product1-head {
+    margin: 0px 350px;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    background-color: chocolate;
+}
+
+.products2 {
+    padding: 30px 80px;
+    background-color: pink;
+}
+
+#banner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner h4 {
+    color: white;
+    font-size: 16px;
+
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: red;
+}
+
+#sm-banner {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("b17.jpg");
+    width: 48%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.banner-box h2 {
+    font-weight: bolder;
+    color: red;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("b10\ \(1\).jpg");
+
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("b7.jpg");
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#banner3 h4 {
+    color: rgb(234, 0, 0);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("b4.jpg");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("b18.jpg");
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px 80px;
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+#newsletter h4 {
+    font-weight: bolder;
+
+}
+
+#newsletter p {
+    color: azure;
+
+}
+
+span {
+    color: black;
+    font-weight: bold;
+}
+
+#newsletter input {
+    padding-left: 10px;
+    font-size: 14px;
+    padding-top: 1px;
+
+
+
+}
+
+.enailinput {
+    width: 400px;
+}
+
+#newsletter button {
+    background-color: red;
+    border: none;
+    padding: 0 10px;
+
+}
+
+#newsletter .from {
+    display: flex;
+    width: 40%;
+
+
+}
+
+.col {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.col-install {
+    width: 50px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+
+
+}
+
+footer h4 {
+    margin-top: 10px;
+
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+
+.copywrite {
+    margin: 0 550px;
+}
+
+.logo1,
+.logo2 {
+    border: 1px solid;
+
+
+}
+
+@media (max-width:799px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: beige;
+        padding: 80px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.6);
+        transition: 0.3s;
+
+    }#navbar.active{
+        right: 0;
+
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+
+    }
+    #mobile{
+        display: flex;
+        align-items: center;}
+        #bar{
+            margin-left: 20px;
+           
+        }#close{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+          
+        }#shoping-bag{
+            display: none;
+        }#close{
+            display: initial;
+        }#hero{
+            height: 60vh;
+            padding: 0 40px;
+            background-position:80% ;
+
+        }.features-row{
+            margin: 10px 10  0px;
+
+
+        }
+            #sm-banner .banner-box {
+                min-width: 100%;
+                height: 30vh;    
+            }
+            #newsletter .form{
+                width: 70%;
+            } 
+
+}
